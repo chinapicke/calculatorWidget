@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Widget</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
 </head>
-<body>
-<div class="calculatorContainer">
-    <div class="inputDisplay"></div>
-    <div class="calculatorBtns">
-        <div class="'leftCalculator ">
-            <div class="topRow ">
-                <button value="clear" id="clear">CLEAR</button>
-                <button value="%" id="percent">%</button>
-            </div>
-            <div class="numberGrid">
-            </div>
-            <div class="bottomRowSymbols">
-                <button value="del" id="del">del</button>
-                <button value='0' id="zero">0</button>
-                <button value="." id="dot">.</button>
-            </div>
-        </div>
-        <div class="rightCalculator ">
-            <section class="rightSideColumn">
-                <div class="symbols">
-                    <button value='+' >+</button>
-                    <button value='-'>-</button>
-                    <button value='/'>/</button>
-                    <button value='*'>*</button>    
-                </div>
-                <button value='=' id="sum">=</button>
-            </section>
 
+<body>
+    <div class="themeTab">
+        <h1 class="tabTitle">Theme</h1>
+        <div class="colourChange">
+            <div>
+                <input class="form-check-input" data-colour="#FFFFFF" style="background-color: #FFFFFF" type="radio" name="flexRadioDefault" id="default">
+                <label class="form-check-label">
+                    Default
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" data-colour="#FFC0CB" style="background-color: #FFC0CB" type="radio" name="flexRadioDefault" id="pink">
+                <label class="form-check-label">
+                    Pink
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input"  data-colour="#FFFF00" style="background-color: #FFFF00" type="radio" name="flexRadioDefault" id="yellow">
+                <label class="form-check-label">
+                    Yellow
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" data-colour="#00BFFF" style="background-color: #00BFFF" type="radio" name="flexRadioDefault" id="blue">
+                <label class="form-check-label">
+                    Blue
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input"  data-colour="#000000" style="background-color: #000000"  type="radio" name="flexRadioDefault" id="black">
+                <label class="form-check-label">
+                    Black
+                </label>
+            </div>
         </div>
     </div>
-</div>
-    
+    <div class="calculatorBody">
+        <div class="calculatorContainer">
+            <div class="inputDisplay"></div>
+            <hr>
+            </hr>
+            <div class="calculatorBtns">
+                <div class="'leftCalculator ">
+                    <div class="topRow ">
+                        <button value="clear" id="clear">CLEAR</button>
+                        <button value="%" id="percent">%</button>
+                    </div>
+                    <div class="numberGrid">
+                    </div>
+                    <div class="bottomRowSymbols">
+                        <button value="del" id="del">del</button>
+                        <button value='0' id="zero">0</button>
+                        <button value="." id="dot">.</button>
+                    </div>
+                </div>
+                <div class="rightCalculator ">
+                    <section class="rightSideColumn">
+                        <div class="symbols">
+                            <button value='+'>+</button>
+                            <button value='-'>-</button>
+                            <button value='/'>/</button>
+                            <button value='*'>*</button>
+                        </div>
+                        <button value='=' id="sum">=</button>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

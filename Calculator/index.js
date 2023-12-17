@@ -112,3 +112,15 @@ sumBtn.addEventListener('click', function () {
         displayInput.innerHTML = displayInput.innerHTML
     }
 })
+
+////// Class selector for color change 
+
+const colourChange = document.querySelectorAll('.form-check-input')
+const calculatorContainer = document.querySelector('.calculatorContainer')
+colourChange.forEach(colour=>{
+    colour.addEventListener('click', function(){
+        let setColour = colour.getAttribute('data-colour')
+        calculatorContainer.style.setProperty('--changeColour', setColour)
+    })
+})
+

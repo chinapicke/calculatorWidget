@@ -1,7 +1,14 @@
+
+:root{
+    --changeColour: #FFFFFF;
+    --equalBtn:#CBC3E3
+
+}
 .calculatorBtns{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap:0
+    gap:0;
+    /* border-top: lightgray 1px solid; */
 }
 
 .symbols{
@@ -16,7 +23,7 @@
 
 .topRow{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .bottomRowSymbols{
@@ -26,4 +33,73 @@
 
 .inputDisplay{
     height:40px;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.calculatorContainer{
+     background-color: var(--changeColour);
+    min-width: 200px;
+    height:350px;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+
+}
+
+.calculatorBody{
+    background-color: #F8F8FF;
+    display: flex;
+    justify-content: center;
+    height:500px;
+    align-items: center;
+    position: relative;
+}
+
+
+.topRow button, .bottomRowSymbols button, .rightSideColumn button, .numberGrid button{
+    background-color: var(--changeColour);
+    border:none;
+  height:50px;
+}
+
+.rightSideColumn{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+}
+
+#sum{
+    padding: 5px;
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    background-color: var(--equalBtn);
+}
+
+.themeTab{
+    position: absolute;
+    background-color: yellow;
+    z-index: 1;
+    align-self: flex-end;
+    margin-top:10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius:6px;
+}
+
+.tabTitle{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
 }
