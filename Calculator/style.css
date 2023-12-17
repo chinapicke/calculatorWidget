@@ -1,0 +1,29 @@
+.calculatorBtns{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:0
+}
+
+.symbols{
+    display: flex;
+    flex-direction: column;
+}
+
+.numberGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.topRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottomRowSymbols{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
+.inputDisplay{
+    height:40px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="calculatorContainer">
+    <div class="inputDisplay"></div>
+    <div class="calculatorBtns">
+        <div class="'leftCalculator ">
+            <div class="topRow ">
+                <button value="clear" id="clear">CLEAR</button>
+                <button value="%" id="percent">%</button>
+            </div>
+            <div class="numberGrid">
+            </div>
+            <div class="bottomRowSymbols">
+                <button value="del" id="del">del</button>
+                <button value='0' id="zero">0</button>
+                <button value="." id="dot">.</button>
+            </div>
+        </div>
+        <div class="rightCalculator ">
+            <section class="rightSideColumn">
+                <div class="symbols">
+                    <button value='+' >+</button>
+                    <button value='-'>-</button>
+                    <button value='/'>/</button>
+                    <button value='*'>*</button>    
+                </div>
+                <button value='=' id="sum">=</button>
+            </section>
+
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
