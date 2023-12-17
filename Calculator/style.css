@@ -13,6 +13,10 @@
     /* border-top: lightgray 1px solid; */
 }
 
+#hrLine{
+border-color: var(--buttonColour);
+}
+
 .symbols{
     display: flex;
     flex-direction: column;
@@ -88,7 +92,7 @@
 
 .themeTab{
     position: absolute;
-    background-color: yellow;
+    background-color:#DA70D6;
     z-index: 1;
     align-self: flex-end;
     margin-top:10px;
@@ -101,6 +105,8 @@
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
+    display: flex;
+    justify-content: space-around;
 }
 
 body{
@@ -111,8 +117,10 @@ body{
 }
 
 .colourChange{
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: red;
+   padding-left:20px;
+   padding-right:20px;
+   padding-bottom: 10px;
+    background-color: #DA70D6;
     display: none;
+    border-bottom-left-radius:6px;
 }

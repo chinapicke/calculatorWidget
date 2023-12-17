@@ -13,6 +13,7 @@ const calculatorContainer = document.querySelector('.calculatorContainer');
 const calculatorBtns = document.querySelector('.calculatorBtns');
 const tabTitle = document.querySelector('.tabTitle')
 const colourDiv = document.querySelector('.colourChange')
+const hrLine = document.getElementById('hrLine')
 
 
 
@@ -21,9 +22,11 @@ tabTitle.addEventListener('click', function(){
     if(colourDiv.style.display === 'none')
     {
         colourDiv.style.display = 'block'
+        tabTitle.innerHTML='Close' + `<p class='closeBtn' >X</p>`
     }
     else{
         colourDiv.style.display = 'none'
+        tabTitle.innerHTML='Theme'
 
     }
 })
@@ -160,6 +163,9 @@ colourChange.forEach(colour=>{
         let submitTextColour = colour.getAttribute('data-submitBtn-text');
         sumBtn.style.setProperty('--submitColour', submitTextColour)
         displayInput.style.setProperty('--buttonColour', buttonsFontColour)
+        hrLine.style.setProperty('--buttonColour', buttonsFontColour )
+        colourDiv.style.display = 'none'
+        tabTitle.innerHTML='Theme'
     })
 })
 
